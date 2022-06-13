@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
     <div
-      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./bg_sontut2.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
+      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./foto_3_new.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
@@ -26,7 +26,7 @@
         </div> -->
         <div class="fixed bottom-10 left-0 right-0">
           <h1
-            class="text-center text-[#f8f8f8] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]"
+            class="text-center text-[#6b6b67] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]" style="text-shadow: 2px 3px 2px #171616;"
           >
             Soni & Tuti
           </h1>
@@ -37,19 +37,19 @@
           </h2> -->
 
           <h2
-            class="uppercase text-[#f8f8f8] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]"
+            class="uppercase text-[#6b6b67] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]" style="text-shadow: 3px 1px 3px #171616;"
           >
             Yang terhormat
           </h2>
           <h1
-            class="text-center text-[#f8f8f8] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize"
+            class="text-center text-[#6b6b67] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize" style="text-shadow: 2px 3px 2px #171616;"
           >
             {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
           </h1>
           <p
-            class=" text-[#f8f8f8] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4"
+            class=" text-[#6b6b67] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4" style="text-shadow: 3px 1px 3px #171616;"
           >
-            Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami
+            Kami mengundang anda untuk hadir diacara Ngunduh Mantu kami.
           </p>
           <div class="animate-[fade-in-top_1s_ease-in-out_2.5s_both]">
             <button
@@ -68,7 +68,7 @@
     </div>
 
     <div
-      class="w-full h-full md:w-1/3 md:mx-auto bg-[#000000] absolute z-0 top-0 text-[#958277]"
+      class="w-full h-full md:w-1/3 md:mx-auto bg-[#000000] absolute z-0 top-0 text-[#6b6b67]"
       v-if="show"
       :class="[modal ? 'overflow-y-hidden' : 'overflow-y-visible']"
     >
@@ -106,7 +106,7 @@
       >
 
         <div class="min-h-1/2 w-4/5 m-auto pb-36">
-          <img src="../../public/decoration-2.png" class="w-full mb-4" />
+          <img src="../../public/decoration-16.png" class="w-full mb-4" />
           <img
             src="../assets/images/bismillah.png"
             class="w-3/5 mx-auto mb-6"
@@ -132,11 +132,11 @@
             data-aos-once="true"
           >
             Maka izinkan kami mengundang sekaligus mengharapkan doa restu dari
-            bapak/ibu dan saudara/i dalam acara pernikahan kami
+            bapak/ibu dan saudara/i dalam acara ngunduh mantu kami
           </p>
           <img
-            src="../../public/decoration-2.png"
-            class="w-full mt-4 rotate-180"
+            src="../../public/decoration-17.png"
+            class="w-full mt-4"
           />
         </div>
       </div>
@@ -146,7 +146,7 @@
         id="mempelai-wanita"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
-          <img src="../../public/decoration-2.png" class="w-full mb-4" />
+          <img src="../../public/decoration-27.png" class="w-full mb-4" />
           <h1
             class="text-center text-3xl mb-4"
             data-aos="zoom-in-down"
@@ -159,8 +159,8 @@
           <div class="columns-2 flex">
             <div class="w-1/3 h-full relative">
               <img
-                src="../assets/images/tuti_hasanah.jpg"
-                class="w-full h-full rounded-xl ml-3 shadow-2xl shadow-emerald-900"
+                src="../assets/images/tuti_solo.jpg"
+                class="w-full h-full rounded-xl ml-3 shadow-2xl shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -192,7 +192,7 @@
           </div>
 
           <img
-            src="../../public/decoration-2.png"
+            src="../../public/decoration-27.png"
             class="w-full mt-4 rotate-180"
           />
         </div>
@@ -203,7 +203,7 @@
         id="mempelai-pria"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
-          <img src="../../public/decoration-2.png" class="w-full mb-4" />
+          <img src="../../public/decoration-35.png" class="w-full mb-4" />
           <h1
             class="text-center text-3xl mb-4"
             data-aos="zoom-in-down"
@@ -240,8 +240,8 @@
 
             <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/soni_putrawan.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/soni_solo.jpg"
+                class="w-full h-full rounded-xl shadow-2xl shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -251,8 +251,8 @@
           </div>
 
           <img
-            src="../../public/decoration-2.png"
-            class="w-full mt-4 rotate-180"
+            src="../../public/decoration-36.png"
+            class="w-full mt-4"
           />
         </div>
       </div>
@@ -281,14 +281,14 @@
             >
               <h1 class="text-4xl mt-2">Soni & Tuti</h1>
             </div>
-            <p
+            <!-- <p
               class="text-center mb-4 px-4"
               data-aos="zoom-in-up"
               data-aos-duration="1500"
               data-aos-once="true"
             >
               akan melaksanakan
-            </p>
+            </p> -->
             <div
               class="w-[80%] bg-[url(./image1.png)] bg-[#cfc3bd] h-[250px] bg-blend-multiply bg-[center_top_-2rem] bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
@@ -297,24 +297,24 @@
             >
               <h1 class="font-honey text-xl text-center mb-4">Akad Nikah</h1>
               <p class="text-center text-sm">
-                <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
+                <i class="fas fa-calendar"></i> Telah dilaksanakan Rabu, 18 Mei 2022
               </p>
-              <p class="text-center text-sm">
+              <!-- <p class="text-center text-sm">
                 <i class="fas fa-clock"></i> 08:00 - Selesai WIB
-              </p>
+              </p> -->
             </div>
             <div
-              class="w-[80%] bg-[url(./tuti_soni3.jpg)] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
+              class="w-[80%] bg-[url(./foto_1_new.jpg)] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="font-honey text-xl text-center mb-4">Resepsi</h1>
+              <h1 class="font-honey text-xl text-center mb-4">Ngunduh Mantu</h1>
               <p class="text-center text-sm">
-                <i class="fas fa-calendar"></i> Rabu, 18 Mei 2022
+                <i class="fas fa-calendar"></i> Minggu, 26 Juni 2022
               </p>
               <p class="text-center text-sm">
-                <i class="fas fa-clock"></i> 11:00 - Selesai WIB
+                <i class="fas fa-clock"></i> 09:00 - Selesai WIB
               </p>
             </div>
 
@@ -410,7 +410,7 @@
               scrolling="no" 
               marginheight="0" 
               marginwidth="0" 
-              src="https://maps.google.com/maps?q=-3.231483%2C%20103.2052618&t=m&z=16&output=embed&iwloc=near">
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.02579920512838!2d104.73633907775816!3d-2.982836022772477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b755c7f2b41c5%3A0x6fcdace0b5e7cfc1!2sKost%20Bu%20JAMILAH!5e0!3m2!1sid!2sid!4v1655116598588!5m2!1sid!2sid">
           </iframe>
           
           
@@ -445,7 +445,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Rabu, 18 <sup>th</sup> Mei 2022
+              Minggu, 26 <sup>th</sup> June 2022
             </h3>
             <p
               class="text-center text-xs mt-2"
@@ -453,8 +453,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              Desa ciptodadi kec. Sukakarya
-              Musirawas Lubuklinggau
+              Gg. Ikhlas, Lorok Pakjo, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan
             </p>
             <div
               class="w-full flex"
@@ -464,7 +463,7 @@
             >
               <a
                 target="_blank"
-                href="https://goo.gl/maps/mGy6Mw3WAEkSmdtj9"
+                href="https://goo.gl/maps/pVxmJQTxju7o3ugm7"
                 class="animate-bounce px-2 py-2 max-w-xl bg-[#958277] text-white rounded-lg mt-8 hover:opacity-80 focus:outline-none active:outline-none text-base text-center inline-block mx-auto"
               >
                 Lihat Lokasi
@@ -482,8 +481,6 @@
         id="galeri-foto"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
-          <img src="../../public/decoration-2.png" class="w-full mb-4" />
-
           <h1
             class="text-center text-3xl mb-4"
             data-aos="zoom-in-up"
@@ -492,13 +489,33 @@
           >
             Galeri Foto
           </h1>
+          <img 
+            src="../../public/decoration-38.png" 
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
+            class="w-full mb-1" 
+          />
+
+          <div class="flex m-auto">
+          <div class="w-full h-full relative mx-2 mb-3">
+              <img
+                src="../assets/images/foto_1_new.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#6b6b67]"
+                data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                alt=""
+              />
+            </div>
+          </div>
 
           <div class="flex m-auto">
 
             <div class="w-1/3 h-full relative ml-3">
               <img
-                src="../assets/images/foto_1.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/foto_3_new.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-emerald-900"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -508,8 +525,8 @@
 
             <div class="w-1/3 h-full relative mx-2">
               <img
-                src="../assets/images/foto_2.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/soni_solo.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -519,8 +536,8 @@
 
             <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/foto_3.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/foto_5_new.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -537,8 +554,8 @@
 
             <div class="w-1/3 h-full relative ml-3">
               <img
-                src="../assets/images/tuti_hasanah.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/foto_2_new.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -548,8 +565,8 @@
 
             <div class="w-1/3 h-full relative mx-2">
               <img
-                src="../assets/images/foto_4.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/tuti_solo.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -559,8 +576,8 @@
 
             <div class="w-1/3 h-full relative mr-3">
               <img
-                src="../assets/images/soni_putrawan.jpg"
-                class="w-full h-full rounded-xl shadow-2xl shadow-emerald-900"
+                src="../assets/images/foto_4_new.jpg"
+                class="w-full h-full rounded-xl shadow-lg shadow-[#6b6b67]"
                 data-aos="zoom-in-up"
                 data-aos-duration="1500"
                 data-aos-once="true"
@@ -571,8 +588,11 @@
           </div>
 
           <img
-            src="../../public/decoration-2.png"
-            class="w-full mt-4 rotate-180"
+            src="../../public/decoration-37.png"
+            class="w-full mt-1"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
           />
         </div>
       </div>
@@ -971,7 +991,7 @@ export default {
   computed: {
     dday() {
       return (
-        new Date("May 18, 2022 08:00:00").getTime() - new Date().getTime()
+        new Date("June 26, 2022 09:00:00").getTime() - new Date().getTime()
       );
     },
   },
