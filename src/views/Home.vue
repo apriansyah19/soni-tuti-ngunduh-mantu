@@ -1,11 +1,11 @@
 <template>
   <div class="h-screen w-screen flex justify-center">
     <div
-      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./foto_3_new.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
+      class="h-full w-full md:w-1/3 md:mx-auto bg-[url(./foto_1_new_cut.jpg)] relative bg-contain bg-auto bg-cover bg-center py-8 text-[#958277] font-[300] font-akaya flex relative z-20 transition-transform ease-in-out delay-500"
       :class="[show ? '-translate-y-full' : '']"
     >
       <audio id="audio" loop>
-        <source src="../assets/audios/backsoundAThousandYears.mp3" type="audio/mpeg" />
+        <source src="../assets/audios/ngunduhMantuBS_cut.mp3" type="audio/mpeg" />
       </audio>
       <div class="min-h-1/2 w-4/5 m-auto">
         <!-- <img src="../../public/decoration-2.png" class="w-full" /> -->
@@ -26,7 +26,7 @@
         </div> -->
         <div class="fixed bottom-10 left-0 right-0">
           <h1
-            class="text-center text-[#6b6b67] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]" style="text-shadow: 2px 3px 2px #171616;"
+            class="text-center text-[#ffffff] text-[calc(50px*0.75)] leading-[1] tracking-[2px] mt-4 pt-4 animate-[scale-in-bottom_1s_ease-in-out_1.1s_both]" style="text-shadow: 2px 3px 2px #171616;"
           >
             Soni & Tuti
           </h1>
@@ -37,17 +37,17 @@
           </h2> -->
 
           <h2
-            class="uppercase text-[#6b6b67] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]" style="text-shadow: 3px 1px 3px #171616;"
+            class="uppercase text-[#ffffff] text-center tracking-[1px] mt-8 text-[calc(14px*0.75)] animate-[fade-in-top_1s_ease-in-out_1.8s_both]" style="text-shadow: 3px 1px 3px #171616;"
           >
             Yang terhormat
           </h2>
           <h1
-            class="text-center text-[#6b6b67] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize" style="text-shadow: 2px 3px 2px #171616;"
+            class="text-center text-[#ffffff] font-akaya text-[calc(36px*0.75)] leading-[1] tracking-[2px] pt-4 pb-4 animate-[scale-in-bottom_1s_ease-in-out_2.1s_both] capitalize" style="text-shadow: 2px 3px 2px #171616;"
           >
             {{ undangan.replace(/\;/g, " ").replace(/\=/g, "&") }}
           </h1>
           <p
-            class=" text-[#6b6b67] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4" style="text-shadow: 3px 1px 3px #171616;"
+            class=" text-[#ffffff] text-center text-[calc(15px*0.75)] animate-[fade-in-bottom_1s_ease-in-out_2.4s_both] px-4" style="text-shadow: 3px 1px 3px #171616;"
           >
             Kami mengundang anda untuk hadir diacara Ngunduh Mantu kami.
           </p>
@@ -259,7 +259,6 @@
 
       <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="dday">
         <div class="min-h-1/2 w-full m-auto pb-36">
-          <img src="../../public/decoration-2.png" class="w-full mb-4" />
 
           <div class="w-full h-full relative">
             <!-- <img
@@ -271,9 +270,7 @@
             alt=""
           /> -->
           </div>
-
-          <div class="w-full h-full py-4">
-            <div
+          <div
               class="flex justify-evenly items-center mb-4"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
@@ -281,6 +278,9 @@
             >
               <h1 class="text-4xl mt-2">Soni & Tuti</h1>
             </div>
+
+
+          <div class="w-full h-full py-4">
             <!-- <p
               class="text-center mb-4 px-4"
               data-aos="zoom-in-up"
@@ -295,7 +295,7 @@
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="font-honey text-xl text-center mb-4">Akad Nikah</h1>
+              <h1 class="text-xl text-center mb-4">Akad Nikah</h1>
               <p class="text-center text-sm">
                 <i class="fas fa-calendar"></i> Telah dilaksanakan Rabu, 18 Mei 2022
               </p>
@@ -303,17 +303,24 @@
                 <i class="fas fa-clock"></i> 08:00 - Selesai WIB
               </p> -->
             </div>
+            <img  
+              src="../../public/decoration-40.png" 
+              class="w-full mb-1"
+              data-aos="zoom-in-down"
+              data-aos-duration="1500"
+              data-aos-once="true" 
+              />
             <div
               class="w-[80%] bg-[url(./foto_1_new.jpg)] h-[250px] bg-blend-multiply bg-top bg-cover text-white p-4 mx-auto rounded-xl border-[1px] border-[#CED4D9] mb-4 flex flex-col justify-end shadow-slate-400 shadow-lg"
               data-aos="zoom-in-down"
               data-aos-duration="1500"
               data-aos-once="true"
             >
-              <h1 class="font-honey text-xl text-center mb-4">Ngunduh Mantu</h1>
-              <p class="text-center text-sm">
+              <h1 class="text-xl text-center mb-4" style="text-shadow: 3px 1px 3px #6b6b67;">Ngunduh Mantu</h1>
+              <p class="text-center text-sm" style="text-shadow: 3px 1px 3px #6b6b67;">
                 <i class="fas fa-calendar"></i> Minggu, 26 Juni 2022
               </p>
-              <p class="text-center text-sm">
+              <p class="text-center text-sm" style="text-shadow: 3px 1px 3px #6b6b67;">
                 <i class="fas fa-clock"></i> 09:00 - Selesai WIB
               </p>
             </div>
@@ -840,6 +847,28 @@ export default {
       audio.muted = this.muted;
     },
     async onClickKirim() {
+      if (!this.nama) {
+         Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Mohon Diisi Nama Anda!`,
+        });
+        return;
+      } else if (!this.konfirmasi) {
+          Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Mohon Dipilih Kehadiran Anda!`,
+        });
+        return;
+      } else if (!this.ucap) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: `Ucapan Anda Masih Kosong!`,
+        });
+        return;
+      }
       this.loading = true;
       const temp = await this.kirimUcapan();
       if (temp === 1) {
