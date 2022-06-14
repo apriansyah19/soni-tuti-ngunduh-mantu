@@ -101,7 +101,7 @@
     </div> -->
 
       <div
-        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya"
         id="kata-pengantar"
       >
 
@@ -142,7 +142,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya"
         id="mempelai-wanita"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -199,7 +199,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full flex bg-[#000000] font-akaya"
         id="mempelai-pria"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -257,7 +257,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="dday">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="dday">
         <div class="min-h-1/2 w-full m-auto pb-36">
 
           <div class="w-full h-full relative">
@@ -384,7 +384,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="lokasi">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="lokasi">
           <div class="min-h-1/2 m-auto pb-36">
             <img src="../../public/decoration-2.png" class="w-full mb-4" />
                <!-- <h1
@@ -484,7 +484,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg"
+        class="min-h-screen w-full flex bg-[#000000] font-akaya"
         id="galeri-foto"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -604,7 +604,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya snow-bg" id="ucapan">
+      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="ucapan">
         <div class="min-h-1/2 px-6 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
