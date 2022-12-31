@@ -68,7 +68,7 @@
     </div>
 
     <div
-      class="w-full h-full md:w-1/3 md:mx-auto bg-[#000000] absolute z-0 top-0 text-[#6b6b67]"
+      class="w-full h-full md:w-1/3 md:mx-auto bg-[#cfcabc] absolute z-0 top-0 text-[#6b6b67]"
       v-if="show"
       :class="[modal ? 'overflow-y-hidden' : 'overflow-y-visible']"
     >
@@ -101,7 +101,7 @@
     </div> -->
 
       <div
-        class="min-h-screen w-full md:mx-auto flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full md:mx-auto flex bg-[#cfcabc] font-akaya "
         id="kata-pengantar"
       >
 
@@ -142,7 +142,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full mx-auto flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full mx-auto flex bg-[#cfcabc] font-akaya snow-bg"
         id="mempelai-wanita"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -199,7 +199,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg"
         id="mempelai-pria"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -257,7 +257,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="dday">
+      <div class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg" id="dday">
         <div class="min-h-1/2 w-full m-auto pb-36">
 
           <div class="w-full h-full relative">
@@ -384,7 +384,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="lokasi">
+      <div class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg" id="lokasi">
           <div class="min-h-1/2 m-auto pb-36">
             <img src="../../public/decoration-2.png" class="w-full mb-4" />
                <!-- <h1
@@ -484,7 +484,7 @@
       </div>
 
       <div
-        class="min-h-screen w-full flex bg-[#000000] font-akaya"
+        class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg"
         id="galeri-foto"
       >
         <div class="min-h-1/2 w-full m-auto pb-36">
@@ -604,7 +604,7 @@
         </div>
       </div>
 
-      <div class="min-h-screen w-full flex bg-[#000000] font-akaya" id="ucapan">
+      <div class="min-h-screen w-full flex bg-[#cfcabc] font-akaya snow-bg" id="ucapan">
         <div class="min-h-1/2 px-6 m-auto pb-36">
           <img src="../../public/decoration-2.png" class="w-full mb-4" />
           <h1
@@ -891,10 +891,10 @@ export default {
       }
     },
     async kirimUcapan() {
-      const API_URL = "https://satria-budi.herokuapp.com/v1/graphql";
+      const API_URL = "https://satria-budi.hasura.app/v1/graphql";
       const API_HEADERS = {
         "Content-Type": "application/json",
-        "x-hasura-admin-secret": "18032405",
+        "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
       };
 
       const API_QUERY = `
@@ -927,10 +927,10 @@ export default {
       this.loading = false;
     },
     async ucapanLength() {
-      const API_URL = "https://satria-budi.herokuapp.com/v1/graphql";
+      const API_URL = "https://satria-budi.hasura.app/v1/graphql";
       const API_HEADERS = {
         "Content-Type": "application/json",
-        "x-hasura-admin-secret": "18032405",
+        "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
       };
 
       const API_QUERY = `
@@ -960,10 +960,10 @@ export default {
       }
     },
     async loadUcapan() {
-      const API_URL = "https://satria-budi.herokuapp.com/v1/graphql";
+      const API_URL = "https://satria-budi.hasura.app/v1/graphql";
       const API_HEADERS = {
         "Content-Type": "application/json",
-        "x-hasura-admin-secret": "18032405",
+        "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
       };
 
       const API_QUERY = `
