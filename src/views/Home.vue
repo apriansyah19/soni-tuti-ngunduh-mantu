@@ -791,7 +791,7 @@
 <script>
 import Modal from "../components/Modal.vue";
 import Menu from "../components/Menu.vue";
-import axios from "axios";
+// import axios from "axios";
 import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -891,34 +891,34 @@ export default {
       }
     },
     async kirimUcapan() {
-      const API_URL = "https://satria-budi.hasura.app/v1/graphql";
-      const API_HEADERS = {
-        "Content-Type": "application/json",
-        "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
-      };
+      // const API_URL = "https://satria-budi.hasura.app/v1/graphql";
+      // const API_HEADERS = {
+      //   "Content-Type": "application/json",
+      //   "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
+      // };
 
-      const API_QUERY = `
-      mutation MyMutation {
-        insert_soni_tuti_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
-          affected_rows
-        }
-      }
-      `;
-      try {
-        const data = await axios.post(
-          API_URL,
-          { query: API_QUERY },
-          { headers: API_HEADERS }
-        );
-        return data.data.data.insert_soni_tuti_wedding_ucapan.affected_rows;
-      } catch (error) {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: `${error}`,
-        });
-        return;
-      }
+      // const API_QUERY = `
+      // mutation MyMutation {
+      //   insert_soni_tuti_wedding_ucapan(objects: {konfirmasi: "${this.konfirmasi}", nama: "${this.nama}", ucapan: "${this.ucap}"}) {
+      //     affected_rows
+      //   }
+      // }
+      // `;
+      // try {
+      //   const data = await axios.post(
+      //     API_URL,
+      //     { query: API_QUERY },
+      //     { headers: API_HEADERS }
+      //   );
+      //   return data.data.data.insert_soni_tuti_wedding_ucapan.affected_rows;
+      // } catch (error) {
+      //   Swal.fire({
+      //     icon: "error",
+      //     title: "Oops...",
+      //     text: `${error}`,
+      //   });
+      //   return;
+      // }
     },
     async clickNext(number) {
       this.loading = true;
@@ -927,71 +927,72 @@ export default {
       this.loading = false;
     },
     async ucapanLength() {
-      const API_URL = "https://satria-budi.hasura.app/v1/graphql";
-      const API_HEADERS = {
-        "Content-Type": "application/json",
-        "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
-      };
+      // const API_URL = "https://satria-budi.hasura.app/v1/graphql";
+      // const API_HEADERS = {
+      //   "Content-Type": "application/json",
+      //   "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
+      // };
 
-      const API_QUERY = `
-      query MyQuery {
-        soni_tuti_wedding_ucapan_aggregate {
-          aggregate {
-            count
-          }
-        }
-      }
-      `;
-      try {
-        const data = await axios.post(
-          API_URL,
-          { query: API_QUERY },
-          { headers: API_HEADERS }
-        );
-        return data.data.data.soni_tuti_wedding_ucapan_aggregate.aggregate
-          .count;
-      } catch (error) {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: `${error}`,
-        });
-        return;
-      }
+      // const API_QUERY = `
+      // query MyQuery {
+      //   soni_tuti_wedding_ucapan_aggregate {
+      //     aggregate {
+      //       count
+      //     }
+      //   }
+      // }
+      // `;
+      // try {
+      //   const data = await axios.post(
+      //     API_URL,
+      //     { query: API_QUERY },
+      //     { headers: API_HEADERS }
+      //   );
+      //   return data.data.data.soni_tuti_wedding_ucapan_aggregate.aggregate
+      //     .count;
+      // } catch (error) {
+      //   Swal.fire({
+      //     icon: "error",
+      //     title: "Oops...",
+      //     text: `${error}`,
+      //   });
+      //   return;
+      // }
+      return 0
     },
     async loadUcapan() {
-      const API_URL = "https://satria-budi.hasura.app/v1/graphql";
-      const API_HEADERS = {
-        "Content-Type": "application/json",
-        "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
-      };
+      // const API_URL = "https://satria-budi.hasura.app/v1/graphql";
+      // const API_HEADERS = {
+      //   "Content-Type": "application/json",
+      //   "x-hasura-admin-secret": "QOcEnAWFOG6YIJW3Z1cE7sOibdW1dMrRaX36hqyWUcVkpdiUdcAMWrvW3LAZpAfX",
+      // };
 
-      const API_QUERY = `
-      query MyQuery {
-        soni_tuti_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
-          ucapan
-          nama
-          konfirmasi
-          id
-          created_at
-        }
-      }
-      `;
-      try {
-        const data = await axios.post(
-          API_URL,
-          { query: API_QUERY },
-          { headers: API_HEADERS }
-        );
-        return data.data.data.soni_tuti_wedding_ucapan;
-      } catch (error) {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: `${error}`,
-        });
-        return;
-      }
+      // const API_QUERY = `
+      // query MyQuery {
+      //   soni_tuti_wedding_ucapan(offset: ${this.offset}, limit: ${this.limit}, order_by: {created_at: desc}) {
+      //     ucapan
+      //     nama
+      //     konfirmasi
+      //     id
+      //     created_at
+      //   }
+      // }
+      // `;
+      // try {
+      //   const data = await axios.post(
+      //     API_URL,
+      //     { query: API_QUERY },
+      //     { headers: API_HEADERS }
+      //   );
+      //   return data.data.data.soni_tuti_wedding_ucapan;
+      // } catch (error) {
+      //   Swal.fire({
+      //     icon: "error",
+      //     title: "Oops...",
+      //     text: `${error}`,
+      //   });
+      //   return;
+      // }
     },
     onClickCopyNorek(flag) {
       let noRek = ''

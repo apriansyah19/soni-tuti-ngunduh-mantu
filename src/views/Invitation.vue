@@ -3,7 +3,7 @@
     class="w-screen h-screen font-akaya flex justify-center items-center flex-col p-6"
     v-if="!login"
   >
-    <h1 class="font-honey text-4xl text-center mb-8 text-[#958277]">Login</h1>
+    <h1 class="font-honey text-4xl text-center mb-8 text-[#958277]">Login sss</h1>
     <input
       type="text"
       placeholder="Username ..."
@@ -16,13 +16,9 @@
       class="border-[1px] border-[#958277] rounded-md py-2 px-1 mb-4 text-xs w-48 text-[#958277]"
       v-model="password"
     />
-    <button
-      @click="onClickLogin"
-      class="animate-bounce min-w-[75px] px-2 py-2 bg-[#958277] text-white rounded-lg hover:opacity-80 focus:outline-none active:outline-none text-xs block mx-auto mb-4"
-    >
-      Kirim
-    </button>
+   
   </div>
+
 
   <div
     class="w-screen h-screen font-akaya flex justify-center items-center flex-col p-6 text-[#958277]"
